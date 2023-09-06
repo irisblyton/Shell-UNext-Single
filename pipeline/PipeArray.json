@@ -1,0 +1,30 @@
+{
+	"name": "PipeArray",
+	"properties": {
+		"activities": [
+			{
+				"name": "Act_filter",
+				"type": "Filter",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('dataarray')",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@not(equals(item(),'ccc' ))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"dataarray": {
+				"type": "String",
+				"defaultValue": "[\"aaa\",\"bbb\",\"ccc\",\"ddd\"]"
+			}
+		},
+		"annotations": []
+	}
+}
