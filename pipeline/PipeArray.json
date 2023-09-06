@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@variables('dataarray')",
+						"value": "@pipeline().parameters.collection",
 						"type": "Expression"
 					},
 					"condition": {
@@ -19,10 +19,26 @@
 				}
 			}
 		],
+		"parameters": {
+			"collection": {
+				"type": "array",
+				"defaultValue": [
+					"aaa",
+					"bbb",
+					"ccc",
+					"ddd"
+				]
+			}
+		},
 		"variables": {
 			"dataarray": {
-				"type": "String",
-				"defaultValue": "[\"aaa\",\"bbb\",\"ccc\",\"ddd\"]"
+				"type": "Array",
+				"defaultValue": [
+					"aaa",
+					"bbb",
+					"ccc",
+					"ddd"
+				]
 			}
 		},
 		"annotations": []
