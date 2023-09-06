@@ -1,0 +1,9 @@
+{
+	"name": "asddata007",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3188e856-7a2a-447e-8aa6-d3891138e78a",
+		"tenantId": "dce87315-8ffa-4a01-ab40-0de5a7214b2f"
+	}
+}
